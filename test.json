@@ -1,0 +1,21 @@
+{
+    "status": 200,
+    "result": {
+        "postcode": "LE3 8SR",
+        "quality": 1,
+        "eastings": 455024,
+        "northings": 306752,
+        "country": "England",
+        "nhs_ha": "East Midlands",
+        "longitude": -1.18800517591597,
+        "latitude": 52.6557131356353,
+        "codes": {
+            "admin_district": "E07000129",
+            "admin_county": "E10000018",
+            "admin_ward": "E05005414",
+            "parish": "E04005349",
+            "ccg": "E38000051",
+            "nuts": "UKF22"
+        }
+    }
+}
