@@ -12,7 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadFile {
 	public Map<Integer, String> readXLSFile(FileInputStream file, String sheetName) {
-		Map<Integer, String> xlsxFile = new HashMap<>();
+		Map<Integer, String> xlsxFile = new HashMap<Integer, String>();
 		try {
 			// Create Workbook instance holding reference to .xlsx file
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
