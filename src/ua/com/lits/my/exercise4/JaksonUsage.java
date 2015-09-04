@@ -33,7 +33,7 @@ public class JaksonUsage {
 		 * results.add(fileValues.get(0).getResult()); for (Object result :
 		 * results) { System.out.println(result); }
 		 */
-		System.out.println("Admin district is " + fileValues.get(0).getResult().getCode().getAdmin_district());
+		System.out.println("Admin district is " + fileValues.get(0).getResult().getCodes().getAdmin_district());
 	}
 
 }

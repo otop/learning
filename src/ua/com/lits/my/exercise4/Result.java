@@ -20,7 +20,7 @@ public class Result {
 	private String nhs_ha;
 	private long longitude;
 	private long latitude;
-	private Codes code;
+	private Codes codes;
 	
 	@JsonCreator
 	public Result (@JsonProperty("postcode") String postcode, @JsonProperty("quality") int quality, @JsonProperty("eastings") int eastings,
@@ -34,7 +34,7 @@ public class Result {
 		this.nhs_ha = nhs_ha;
 		this.longitude = longitude;
 		this.latitude = latitude;
-		this.code = code;
+		this.codes = code;
 	}
 
 	public String getPostcode() {
@@ -101,12 +101,12 @@ public class Result {
 		this.latitude = latitude;
 	}
 
-	public Codes getCode() {
-		return code;
+	public Codes getCodes() {
+		return codes;
 	}
 
-	public void setCode(Codes code) {
-		this.code = code;
+	public void setCodes(Codes codes) {
+		this.codes = codes;
 	}
 	
 }
