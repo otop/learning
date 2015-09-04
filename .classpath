@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/ant-javafx.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/dt.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/javafx-mx.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/packager.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/sa-jdi.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_51/lib/tools.jar"/>
 	<classpathentry kind="lib" path="libs/commons-codec-1.9.jar"/>
 	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="libs/fluent-hc-4.5.jar"/>
@@ -31,6 +24,6 @@
 	<classpathentry kind="lib" path="libs/poi-ooxml-schemas-3.13-beta1-20150723.jar"/>
 	<classpathentry kind="lib" path="libs/poi-scratchpad-3.13-beta1-20150723.jar"/>
 	<classpathentry kind="lib" path="libs/xmlbeans.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_51"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
