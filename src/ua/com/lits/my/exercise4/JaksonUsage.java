@@ -25,15 +25,19 @@ public class JaksonUsage {
 		List<JSONFileMapping> fileValues = objectMapper.readValue(input,
 				typeFactory.constructCollectionType(ArrayList.class, JSONFileMapping.class));
 		System.out.println("Request status is " + fileValues.get(0).getStatus());
-		System.out.println("Country is " + fileValues.get(0).getResult().getCountry()); // NULL
-																						// Pointer
-																						// Exception
-		/*
-		 * ArrayList<Result> results = new ArrayList<Result>();
-		 * results.add(fileValues.get(0).getResult()); for (Object result :
-		 * results) { System.out.println(result); }
-		 */
+		System.out.println("Country is " + fileValues.get(0).getResult().getCountry());
+		Codes code = fileValues.get(0).getResult().getCodes();
 		System.out.println("Admin district is " + fileValues.get(0).getResult().getCodes().getAdmin_district());
+		ArrayList<Object> codes = new ArrayList<Object>();
+		codes.add(code.getAdmin_district());
+		codes.add(code.getAdmin_county());
+		codes.add(code.getAdmin_ward());
+		codes.add(code.getParish());
+		codes.add(code.getCcg());
+		codes.add(code.getNuts());
+		for (Object elem : codes) {
+			System.out.println(elem);
+		}
 	}
 
 }
