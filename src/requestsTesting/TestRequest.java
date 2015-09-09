@@ -16,14 +16,16 @@ import org.testng.asserts.SoftAssert;
 public class TestRequest {
 	@Test
 	public void testRequest() throws ClientProtocolException, IOException{
+		SoftAssert softAssert = new SoftAssert();
 		HttpClient httpClient = HttpClientBuilder.create().build();
 		HttpGet httpget = new HttpGet("https://www.facebook.com/");
 		HttpResponse response = httpClient.execute(httpget);
+		int responseSttus = response.getStatusLine().getStatusCode();
+		int expectedStatus = 200;
+		softAssert.assertEquals(responseSttus, expectedStatus);
 		HttpEntity entity = response.getEntity();
 		String responseString = EntityUtils.toString(entity, "UTF-8");
 		System.out.println(responseString);
-		SoftAssert softAssert = new SoftAssert();
-		softAssert.assertEquals(response.getStatusLine(), "200");
 		Reporter.getCurrentTestResult();
 	}
 
