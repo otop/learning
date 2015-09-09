@@ -13,7 +13,7 @@ import java.util.Random;
  * @author http://stackoverflow.com/questions/31260512/generate-a-secure-random-password-in-java-with-minimum-special-character-require
  *
  */
-public class randomStringGenerator {
+public class RandomStringGenerator {
 
 	private final List<StringSet> stSets;
 	private final char[] allCharacters;
@@ -27,7 +27,7 @@ public class randomStringGenerator {
 	 * @param minLength
 	 * @param maxLength
 	 */
-	public randomStringGenerator(Collection<StringSet> origStSets, int minLength, int maxLength) {
+	public RandomStringGenerator(Collection<StringSet> origStSets, int minLength, int maxLength) {
 		this.minLength = minLength;
 		this.maxLength = maxLength;
 
